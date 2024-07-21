@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 5px;
+  }
+.light {
+    --bg-card: rgb(244, 240, 240);
+    --bg: rgb(248, 248, 248);
+    --txt: rgb(33, 33, 33);
+    --page-link:#0080FF;
+    transition: all 1s;
+}
+
+.dark {
+    --bg-card: #27272a;
+    --bg: #18181b;
+    --txt: rgb(235, 235, 235);
+    --page-link:#e7e7e7;
+    transition: all 1s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.app {
+    background-color: var(--bg) !important;
+    color: var(--txt) !important;
+}
+
+p,
+h3 {
+    color: var(--txt) !important;
+}
+
+h3 {
+    font-size: 1.2rem !important;
+}
+
+.card {
+    background-color: var(--bg-card) !important;
+}
+.page-link{
+    color: var(--page-link)!important;
+    background-color: var(--bg-card)!important;
+}
+.page-item.active .page-link{
+      background-color: #0080FF!important;
+      color: white!important;
+}
+.title{
+    color: var(--txt)!important;
+    text-decoration: none;
+}
